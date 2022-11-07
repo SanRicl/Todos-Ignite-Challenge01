@@ -86,7 +86,6 @@ app.put("/todos/:id", checksExistsUserAccount, (request, response) => {
 });
 
 app.patch("/todos/:id/done", checksExistsUserAccount, (request, response) => {
-  const { done } = request.body;
   const { user } = request;
   const { id } = request.params;
 
